@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 2</title>
+</head>
+<body>
+
+	<h1>Ejercicio 2: saludo en 3 idiomas</h1>
+	
+	<form method="post" action="saludo.jsp">
+		Introduce tu nombre:
+		<input type="text" name="nombre">
+		<br>
+		Elige el idioma en que quieres ser 
+		<select name="idioma">
+			<option>Español</option>
+			<option>Portugués</option>
+			<option>Inglés</option>
+		</select>
+		<br>
+		<input type="submit" value="Enviar">
+	</form>
+
+</body>
+</html>

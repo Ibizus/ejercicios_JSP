@@ -1,0 +1,15 @@
+INDEX VERSION 1.4+/home/hector/eclipse-workspace-Java21/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2667753919.index
+4267778635.index
+2946134925.index
+4016588080.index
+1432018002.index
+767924651.index
+23471132.index
+892361175.index
+936125166.index
+2902201541.index
+2946134925.index
+1986073738.index
+2557441446.index
+2446932365.index

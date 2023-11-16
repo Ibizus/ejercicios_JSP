@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sabores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Agregamos esta línea para centrar verticalmente los elementos */
+}
+
+article {
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del flex para apilar el texto y el input */
+    align-items: center; /* Centramos horizontalmente los elementos dentro de cada artículo */
+}

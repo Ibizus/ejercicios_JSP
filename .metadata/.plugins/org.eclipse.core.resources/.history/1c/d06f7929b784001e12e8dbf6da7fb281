@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+	background-color: honeydew;
+	padding-top: 100px;
+	
+	display: flex;
+	flex-direction: column;
+   align-items: center;
+   margin: auto;
+}
+h1, h3, h4{
+	text-align: center;
+	margin: 20px;
+}
+h1{
+	color: brown;
+}
+h3{
+	color: red;
+}
+h4{
+	color: lightcoral;
+}

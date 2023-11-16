@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css"/>
+	<title>Ejercicio 10</title>
+</head>
+<body>
+	<h1>Máquina de helados</h1>
+	<p>Seleccione los porcentajes para preparar un helado a su gusto</p>
+	
+	
+	<form method="post" action="helado.jsp">
+	
+		<article>
+			<img alt="Chocolate" src="images/chocolate.jpeg">
+			Chocolate <input type="text" name="choc"> %
+		</article>
+		<article>
+			<img alt="Fresa" src="images/fresa.jpeg">
+			Fresa <input type="text" name="fresa"> %
+		</article>
+		<article>
+			<img alt="Vainilla" src="images/vainilla.jpeg">
+			Vainilla <input type="text" name="vainilla"> %
+		</article>
+
+	<input type="submit" value="Preparar helado">
+	</form>
+	
+	
+	
+
+
+
+</body>
+</html>

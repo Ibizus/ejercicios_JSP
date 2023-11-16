@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+#tarrina{
+	height: 100px;
+	width: 400px;
+	border-right: aliceblue 5px solid;
+  	border-bottom: aliceblue 5px solid;
+  	border-left: aliceblue 5px solid;
+}
+
+#chocolate{
+	background-color: saddlebrown;
+}
+
+#fresa{
+	background-color: indianred;
+}
+
+#vainilla{
+	background-color: bisque;
+}
+

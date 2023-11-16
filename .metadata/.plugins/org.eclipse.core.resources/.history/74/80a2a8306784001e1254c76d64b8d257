@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cacula el calendario seleccionado</title>
+</head>
+<body>
+
+<%
+	int mes = Integer.valueOf(request.getParameter("mes"));
+	int ano = Integer.valueOf(request.getParameter("ano"));
+	String mes = request.getParameter("mes");
+	String ano = request.getParameter("ano");
+	integer numAno = Integer.parseInteger(ano);
+
+
+	Calendar calendario = Calendar.getInstance();
+	calendario.set(Calendar.YEAR, 1905);
+	calendario.set(Calendar.MONTH, 1);
+	
+	int numDays = calendario.getActualMaximum(Calendar.DATE);
+	
+	
+	
+	out.println("Incio de sesión: <b>" + formato.format(calendar.getTime()) + "</b>");
+
+
+%>
+
+
+
+
+
+
+</body>
+</html>

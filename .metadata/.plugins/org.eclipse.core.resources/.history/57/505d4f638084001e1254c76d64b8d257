@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/helado.css"/>
+	<title>Máquina de helados</title>
+</head>
+<body>
+	<h1>Aquí tiene su tarrina de helado</h1>
+	
+	<%
+	
+	int chocolate = Integer.valueOf(request.getParameter("choc"));
+	int fresa = Integer.valueOf(request.getParameter("fresa"));
+	int vainilla = Integer.valueOf(request.getParameter("vainilla"));
+	
+	if((chocolate + fresa + vainilla) > 100){
+		
+		out.println("La suma de los porcentajes debe ser menor o igual que 100.");
+		out.println("Por favor, introduzca de nuevo los porcentajes");
+	}else{
+	%>
+	
+		<p id="tarrina" height="100px" width="400px">
+			<p id="chocolate" height="<% chocolate %>px"></p>
+			<p id="fresa" height="<% out.print(fresa); %>px"></p>
+			<p id="vainilla" height="<% out.print("vainilla"); %>px"></p>
+		</p>
+	
+	<%	
+	}
+	%>
+
+
+
+</body>
+</html>

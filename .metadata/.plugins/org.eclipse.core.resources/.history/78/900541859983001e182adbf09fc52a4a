@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cacula el calendario seleccionado</title>
+</head>
+<body>
+
+
+	String mes = request.getParameter("mes");
+	
+	String ano = request.getParameter("ano");
+	integer numAno = Integer.parseDouble(ano);
+
+</body>
+</html>

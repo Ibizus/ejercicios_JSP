@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tabla de multiplicar</title>
+</head>
+<body>
+
+	<%
+	String num = request.getParameter("numero");
+	out.println("<h1>Tabla del " + num + "</h1>");
+	%>
+
+
+
+	<h1>Tabla del </h1>
+	<table border=1>
+	<tr>
+	<td>Número</td><td>Cuadrado</td>
+	</tr>
+	<%
+	for(int i = 0; i < 10; i++) {
+	%>
+	<tr>
+		 <%
+		 out.println("<td>" + i + "</td>");
+		 %>
+		 <td>
+		 <%= i * i %>
+		
+		 <%
+		 out.println("</td>");
+		 %>
+		 </tr>
+	<%
+	}
+	%>
+	</table>
+
+</body>
+</html>

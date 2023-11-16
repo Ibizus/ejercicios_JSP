@@ -1,0 +1,27 @@
+<%--madia.jsp --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calcula media</title>
+</head>
+<body>
+<%
+String salida = "Tu nota media es: ";
+try{
+	String nota1 = request.getParameter("nota1");
+	String nota2 = request.getParameter("nota2");
+	String nota3 = request.getParameter("nota3");
+
+	double resultado;
+	resultado = (Double.parseDouble(request.getParameter("nota1")) + Double.parseDouble(request.getParameter("nota2")) + Double.parseDouble(request.getParameter("nota3")))/3;
+	out.print(salida + resultado);
+}catch(Exception e){
+	out.print("Datos erróneos, no se puede calcular la media");
+}
+%>
+
+</body>
+</html>

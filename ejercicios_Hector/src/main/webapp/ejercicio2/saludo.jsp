@@ -1,0 +1,25 @@
+<%-- saludo.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Saludo</title>
+</head>
+<body>
+<%
+String idioma = request.getParameter("idioma");
+String saludo = "";
+if (idioma.equals("Español")) {
+	saludo = "Hola";
+} else if (idioma.equals("Portugués")){
+	saludo = "Olá";
+} else if (idioma.equals("Inglés")){
+	saludo = "Hello";
+}
+
+out.print(saludo + " " + request.getParameter("nombre"));
+
+%>
+</body>
+</html>

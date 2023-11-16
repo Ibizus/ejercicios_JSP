@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%@ page import="java.text.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calcula el calendario seleccionado</title>
+</head>
+<body>
+
+<%
+	int ano = Integer.valueOf(request.getParameter("ano"));
+	String mes = request.getParameter("mes");
+	
+	
+
+	Calendar calendario = Calendar.getInstance();
+	calendario.set(Calendar.YEAR, 1905);
+	calendario.set(Calendar.MONTH, Calendar.FEBRUARY);
+	
+	int numDays = calendario.getActualMaximum(Calendar.DATE);
+	
+	for(int dia = 1; dia <= numDays; dia++){
+		
+		calendario.set(Calendar.DAY_OF_MONTH, 0);
+		Date fecha = calendario.getTime();
+		out.println(fecha + "<br>");
+		
+		SimpleDateFormat formato = new SimpleDateFormat("EEE d MMM yyyy");
+		out.println(formato.format(fecha) + "<br>");
+	}
+%>
+
+</body>
+</html>

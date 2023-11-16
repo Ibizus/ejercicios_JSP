@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	display: flex;
+}
+
+h1{
+	
+}
+
+#tarrina{
+	margin: 50px;
+	height: 100px;
+	width: 400px;
+	border-right: grey 5px solid;
+  	border-bottom: grey 5px solid;
+  	border-left: grey 5px solid;
+}
+
+#chocolate{
+	width: 100%;
+	background-color: saddlebrown;
+}
+
+#fresa{
+		width: 100%;
+	background-color: indianred;
+}
+
+#vainilla{
+		width: 100%;
+	background-color: bisque;
+}
+

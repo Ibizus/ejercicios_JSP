@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+	margin: 30px;
+}
+
+table{
+	border: black solid 5px;
+}

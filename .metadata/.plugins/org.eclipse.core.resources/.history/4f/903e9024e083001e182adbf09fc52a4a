@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 9</title>
+</head>
+<body>
+	<h1>Ejercicio 9: Tablero de ajedrez</h1>
+	
+	<table>
+	<%
+	for(int i=0; i<8; i++){
+	%>
+		<tr>
+		<% for(int j=0; j<8; j++){ 
+		%>
+			<td width="40px" height="40px" bgcolor="
+				<% 
+				if(i+j %2 == 0){
+				%>
+					black">
+				<%
+				}else{
+				%>
+					white">
+				<%
+				}
+				%>
+			
+			</td>
+			<%
+			} 
+			%>		
+		</tr>
+	<%
+	}
+	%>
+	</table>
+
+</body>
+</html>

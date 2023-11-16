@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 3</title>
+</head>
+<body>
+
+	<h1>Ejercicio 3: Calcula tu nota media</h1>
+	
+	<form method="post" action="media.jsp">
+		Nota 1:
+		<input type="text" name="nota1">
+		<br>
+		Nota 2:
+		<input type="text" name="nota2">
+		<br>
+		Nota 3:
+		<input type="text" name="nota3">
+		<br>
+		<input type="submit" value="Enviar">
+	</form>
+
+</body>
+</html>

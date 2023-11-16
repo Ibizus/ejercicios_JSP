@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Maquina de helados</title>
+</head>
+<body>
+	<h1>Aquí tiene su tarrina de helado</h1>
+	
+	<article id="tarrina">
+		<section id="chocolate">
+		</section>
+		<section id="fresa">
+		</section>
+		<section id="vainilla">
+		</section>
+	</article>
+	
+	<%
+	int chocolate = Integer.valueOf(request.getParameter("chocolate"));
+	int fresa = Integer.valueOf(request.getParameter("fresa"));
+	int vainilla = Integer.valueOf(request.getParameter("vainilla"));
+	
+	
+	%>
+
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style1.css"/>
+<title>Ejercicio 1</title>
+</head>
+<body>
+	<div>
+		<h1>Héctor López Díaz</h1>
+		<h3>CFGS 2º Desarrollo de Aplicaciones Web</h3>
+		<h6><a>IES Vega de Mijas</a></h6>
+	</div>
+	
+</body>
+</html>
